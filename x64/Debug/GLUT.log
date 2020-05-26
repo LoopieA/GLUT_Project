@@ -1,0 +1,15 @@
+﻿  Rectangle.cpp
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(28,105): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(28,91): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(28,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(28,62): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(28,47): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(28,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(29,108): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(29,94): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(29,79): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(29,64): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(29,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\Rectangle.cpp(29,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  GLUT.vcxproj -> G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\x64\Debug\GLUT.exe
