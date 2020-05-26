@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Airplane.cpp" />
     <ClCompile Include="EnglineGlut.cpp" />
     <ClCompile Include="GlutData.cpp" />
     <ClCompile Include="GlutDrawing.cpp" />
@@ -29,6 +30,7 @@
     <ClCompile Include="Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Airplane.h" />
     <ClInclude Include="EngineGlut.h" />
     <ClInclude Include="GlutData.h" />
     <ClInclude Include="GlutDrawing.h" />

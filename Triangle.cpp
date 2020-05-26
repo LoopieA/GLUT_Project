@@ -3,6 +3,11 @@
 #include "Triangle.h"
 #include"Line.h"
 
+Triangle::Triangle()
+{
+    SetTriangle(*(new Point(0, 0)), *(new Point(0, 0)), *(new Point(0, 0)), false);
+}
+
 // Triangle constructor
 Triangle::Triangle(Point first, Point second, Point third, bool fill)
 {

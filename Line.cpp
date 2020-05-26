@@ -2,6 +2,10 @@
 #include "EngineGlut.h";
 #include "Point.h"
 
+Line::Line()
+{
+    SetLine(*(new Point(0, 0)), *(new Point(0, 0)));
+}
 // Point constructor
 Line::Line(Point first, Point second)
 {

@@ -3,6 +3,10 @@
 #include "Rectangle.h"
 #include"Line.h"
 
+My_Rectangle::My_Rectangle()
+{
+    SetRectangle(*(new Point(0,0)), 0, 0, false);
+}
 // Point constructor
 My_Rectangle::My_Rectangle(Point first, int width, int height, bool fill)
 {
