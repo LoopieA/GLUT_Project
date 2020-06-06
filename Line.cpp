@@ -32,3 +32,10 @@ void Line::draw()
 {
     engine.drawLine(first.getX(), first.getY(), second.getX(), second.getY());
 }
+
+std::ostream& operator << (std::ostream& out, const Line& c)
+{
+    out << "First->" << c.first << "\n";
+    out << "Second->" << c.second << "\n";
+    return out;
+}

@@ -15,6 +15,7 @@ public:
 	//Point* getLine() { Point line[2]; line[0] = first; line[1] = second; return line; };
 	My_Rectangle operator*(const double n);
 	void draw();
+	friend std::ostream& operator<<(std::ostream& os, const My_Rectangle& p);
 };
 
 #endif // Rectangle

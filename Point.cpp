@@ -1,5 +1,6 @@
 #include "Point.h"
 #include "EngineGlut.h";
+#include <iostream>
 
 // Point constructor
 Point::Point()
@@ -22,4 +23,11 @@ void Point::SetPoint(double x_coord, double y_coord)
 void Point::draw()
 {
     engine.drawPoint(this->x, this->y);
+}
+
+std::ostream& operator << (std::ostream& out, const Point& c)
+{
+    out << "The X coordinate of the point: " << c.x << "\n";
+    out << "The Y coordinate of the point: " << c.y << "\n";
+    return out;
 }

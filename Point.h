@@ -1,6 +1,7 @@
 #ifndef POINT_H
 #define POINT_H
 #include "Shape.h"
+#include <iostream>
 
 class Point: public Shape
 {
@@ -13,6 +14,7 @@ public:
 	double getX(){ return x; };
 	double getY(){ return  y; };
 	void draw();
+	friend std::ostream& operator<<(std::ostream& os, const Point& p);
 };
 
-#endif // Point
+#endif // Point	

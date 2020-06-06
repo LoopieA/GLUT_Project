@@ -47,3 +47,11 @@ void Triangle::draw()
         lineAC.draw();
     }
 }
+
+std::ostream& operator << (std::ostream& out, const Triangle& c)
+{
+    out << "First->" << c.first << "\n";
+    out << "Second->" << c.second << "\n";
+    out << "Third->" << c.third << "\n";
+    return out;
+}

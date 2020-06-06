@@ -54,3 +54,12 @@ void My_Rectangle::draw()
         lineDC.draw();
     }
 }
+
+std::ostream& operator << (std::ostream& out, const My_Rectangle& c)
+{
+    out << "First->" << c.first << "\n";
+    out << "Second->" << c.second << "\n";
+    out << "Third->" << c.third << "\n";
+    out << "Fourth->" << c.fourth << "\n";
+    return out;
+}

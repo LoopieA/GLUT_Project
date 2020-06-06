@@ -86,6 +86,19 @@ void ZoomRectangleAnimationTest()
     rectangle.draw();
 }
 
+void PointCoutOverloadTest()
+{
+    Point pointA(-100, 0);
+    std::cout << pointA;
+}
+void RecCoutOverloadTest()
+{
+    Point pointA(-100, 0);
+    My_Rectangle rectangle(pointA, 200, 100, false);
+    std::cout << rectangle;
+}
+
+
 int main(int argc, char ** argv)
 {
     //init
@@ -96,6 +109,7 @@ int main(int argc, char ** argv)
     //Airplane airplane;
     //DrawLineAnimation();
     //ZoomTriangleAnimationTest();
-    ZoomRectangleAnimationTest();
+    //ZoomRectangleAnimationTest();
+    RecCoutOverloadTest();
     std::cin.ignore();
 }
