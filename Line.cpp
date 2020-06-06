@@ -2,27 +2,31 @@
 #include "EngineGlut.h";
 #include "Point.h"
 #include <iostream>
+
+// Line default constructor
 Line::Line()
 {
     SetLine(*(new Point(0, 0)), *(new Point(0, 0)));
 }
-// Point constructor
+// Line parameterzied constructor
 Line::Line(Point first, Point second)
 {
     SetLine(first, second);
 }
 
+// Line destructor
 Line::~Line()
 {
 }
 
-// Point member function
+// Line setter
 void Line::SetLine(Point x_Point, Point y_Point)
 {
     first = x_Point;
     second = y_Point;
 }
 
+// Line zoom in/out overloaded operator
 Line Line::operator*(const double n)
 {
     Line res;
@@ -32,11 +36,13 @@ Line Line::operator*(const double n)
     return res;
 }
 
+// Line draw function
 void Line::draw()
 {
     engine.drawLine(first.getX(), first.getY(), second.getX(), second.getY());
 }
 
+// Line overloaded cout operator
 std::ostream& operator << (std::ostream& out, const Line& c)
 {
     out << "First->" << c.first << "\n";

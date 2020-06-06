@@ -8,6 +8,6 @@ class Shape
 		EngineGlut engine;
 	public:
 		virtual void draw() {};
-		virtual void print() { };
+		virtual void print() {};
 };
 #endif //Shape

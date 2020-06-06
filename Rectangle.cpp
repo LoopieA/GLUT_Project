@@ -15,6 +15,7 @@ My_Rectangle::My_Rectangle(Point first, int width, int height, bool fill)
     SetRectangle(first, width, height, fill);
 }
 
+// Rectangle destructor
 My_Rectangle::~My_Rectangle()
 {
 }

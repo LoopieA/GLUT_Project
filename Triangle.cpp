@@ -14,6 +14,7 @@ Triangle::Triangle(Point first, Point second, Point third, bool fill)
     SetTriangle(first, second, third, fill);
 }
 
+// Triangle destructor
 Triangle::~Triangle()
 {
 }
@@ -27,6 +28,7 @@ void Triangle::SetTriangle(Point x_Point, Point y_Point, Point z_Point, bool fil
     fill = fill_t;
 }
 
+//Triangle overloaded zoom in/out operator
 Triangle Triangle::operator*(const double n)
 {
     Triangle res;
@@ -37,6 +39,7 @@ Triangle Triangle::operator*(const double n)
     return res;
 }
 
+// Triangle draw function
 void Triangle::draw()
 {
     if (fill)
@@ -52,6 +55,7 @@ void Triangle::draw()
     }
 }
 
+// Triangle overloaded cout operator
 std::ostream& operator << (std::ostream& out, const Triangle& c)
 {
     out << "First->" << c.first << "\n";
