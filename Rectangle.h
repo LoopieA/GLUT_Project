@@ -11,6 +11,7 @@ private:
 public:
 	My_Rectangle();
 	My_Rectangle(Point first, int width, int height, bool fill);
+	~My_Rectangle();
 	void SetRectangle(Point first, int width, int height, bool fill);
 	//Point* getLine() { Point line[2]; line[0] = first; line[1] = second; return line; };
 	My_Rectangle operator*(const double n);

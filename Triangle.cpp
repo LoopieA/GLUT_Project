@@ -14,6 +14,10 @@ Triangle::Triangle(Point first, Point second, Point third, bool fill)
     SetTriangle(first, second, third, fill);
 }
 
+Triangle::~Triangle()
+{
+}
+
 // Triangle setter
 void Triangle::SetTriangle(Point x_Point, Point y_Point, Point z_Point, bool fill_t)
 {

@@ -113,6 +113,8 @@ int main(int argc, char ** argv)
     //ZoomTriangleAnimationTest();
     //ZoomRectangleAnimationTest();
     //RecCoutOverloadTest();
-    Robot robot;
+    //Robot robot;
+    Point point(-20, 30);
+    delete &point;
     std::cin.ignore();
 }

@@ -3,17 +3,23 @@
 #include "Rectangle.h"
 #include"Line.h"
 
+// Rectangle default constructor
 My_Rectangle::My_Rectangle()
 {
     SetRectangle(*(new Point(0,0)), 0, 0, false);
 }
-// Point constructor
+
+// Rectangle parameterized constructor
 My_Rectangle::My_Rectangle(Point first, int width, int height, bool fill)
 {
     SetRectangle(first, width, height, fill);
 }
 
-// Point member function
+My_Rectangle::~My_Rectangle()
+{
+}
+
+// Rectangle setter
 void My_Rectangle::SetRectangle(Point x_Point, int width_rec, int height_rec, bool fill_rec)
 {
     first = x_Point;
@@ -23,7 +29,7 @@ void My_Rectangle::SetRectangle(Point x_Point, int width_rec, int height_rec, bo
     fill = fill_rec;
 }
 
-
+// Rectangle zoom in/out overloaded operator
 My_Rectangle My_Rectangle::operator*(const double n)
 {
     My_Rectangle res;
@@ -35,6 +41,7 @@ My_Rectangle My_Rectangle::operator*(const double n)
     return res;
 }
 
+// Rectangle draw function
 void My_Rectangle::draw()
 {
     if (fill)
@@ -55,6 +62,7 @@ void My_Rectangle::draw()
     }
 }
 
+// Rectangle overloaded cout operator
 std::ostream& operator << (std::ostream& out, const My_Rectangle& c)
 {
     out << "First->" << c.first << "\n";

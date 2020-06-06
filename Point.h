@@ -10,6 +10,7 @@ private:
 public:
 	Point();
 	Point(double x, double y);
+	~Point();
 	void SetPoint(double x, double y);
 	double getX(){ return x; };
 	double getY(){ return  y; };

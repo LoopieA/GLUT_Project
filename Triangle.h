@@ -11,6 +11,7 @@ private:
 public:
 	Triangle();
 	Triangle(Point first, Point second, Point third, bool fill);
+	~Triangle();
 	void SetTriangle(Point first, Point second, Point third, bool fill);
 	Point* getLine() { Point line[2]; line[0] = first; line[1] = second; return line; };
 	Triangle operator*(const double n);

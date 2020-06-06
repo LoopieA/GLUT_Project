@@ -10,6 +10,7 @@ private:
 public:
 	Line();
 	Line(Point first, Point second);
+	~Line();
 	void SetLine(Point first, Point second);
 	Point* getLine() { Point line[2]; line[0] = first; line[1] = second; return line; };
 	Line operator*(const double n);

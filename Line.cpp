@@ -12,6 +12,10 @@ Line::Line(Point first, Point second)
     SetLine(first, second);
 }
 
+Line::~Line()
+{
+}
+
 // Point member function
 void Line::SetLine(Point x_Point, Point y_Point)
 {
