@@ -1,5 +1,5 @@
 ﻿  main.cpp
-G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\main.cpp(22,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\main.cpp(23,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\main.cpp(23,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\main.cpp(21,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\main.cpp(22,17): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\GLUT\main.cpp(22,14): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
   GLUT.vcxproj -> G:\Projects\Programming\UVT\Practice Stage\GraphicsEngine\GLUT\x64\Debug\GLUT.exe

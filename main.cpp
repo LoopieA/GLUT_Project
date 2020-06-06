@@ -13,7 +13,6 @@
 void drawSinus()
 {
     EngineGlut e;
-    
     //x from (-400,+400)
     //y = 100*sin(x)
     for (float i=0; i<360; i+=1)
@@ -43,16 +42,10 @@ void drawTriangleAnimation()
     Point pointB(-25, 250);
     Point pointC(-50, 200);
     
-    //pointje.draw();
-    /*Line lineAB(pointA, pointB);
-    Line lineBC(pointB, pointC);
-    Line lineAC(pointA, pointC);
-    lineAB.draw();
-    lineBC.draw();
-    lineAC.draw();*/
     pointA.draw();
     pointB.draw();
     pointC.draw();
+
     Triangle triangle(pointA, pointB, pointC, false);
     triangle.draw();
     Sleep(1);
@@ -65,6 +58,34 @@ void DrawRectangleAnimation()
     rectangle.draw();
 }
 
+void DrawLineAnimation()
+{
+    Point pointA(0, 200);
+    Point pointB(-25, 250);
+    Line lineAB(pointA, pointB);
+    lineAB * 2;
+    lineAB.draw();
+}
+
+void ZoomTriangleAnimationTest()
+{
+    Point pointA(0, -100);
+    Point pointB(-25, -150);
+    Point pointC(-50, -100);
+
+    Triangle triangle(pointA, pointB, pointC, false);
+    triangle * 2;
+    triangle.draw();
+}
+
+void ZoomRectangleAnimationTest()
+{
+    Point pointA(-100, 0);
+    My_Rectangle rectangle(pointA, 200, 100, false);
+    rectangle * 2;
+    rectangle.draw();
+}
+
 int main(int argc, char ** argv)
 {
     //init
@@ -72,7 +93,9 @@ int main(int argc, char ** argv)
     //drawSinus();
     //drawTriangleAnimation();
     //DrawRectangleAnimation();
-    Airplane airplane;
-    
+    //Airplane airplane;
+    //DrawLineAnimation();
+    //ZoomTriangleAnimationTest();
+    ZoomRectangleAnimationTest();
     std::cin.ignore();
 }

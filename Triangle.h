@@ -1,8 +1,9 @@
 #ifndef Triangle_H
 #define Triangle_H
 #include "Point.h"
+#include "Shape.h"
 
-class Triangle
+class Triangle: public Shape
 {
 private:
 	Point first, second, third;
@@ -12,6 +13,7 @@ public:
 	Triangle(Point first, Point second, Point third, bool fill);
 	void SetTriangle(Point first, Point second, Point third, bool fill);
 	Point* getLine() { Point line[2]; line[0] = first; line[1] = second; return line; };
+	Triangle operator*(const double n);
 	void draw();
 };
 

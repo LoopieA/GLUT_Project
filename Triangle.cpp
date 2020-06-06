@@ -23,11 +23,20 @@ void Triangle::SetTriangle(Point x_Point, Point y_Point, Point z_Point, bool fil
     fill = fill_t;
 }
 
+Triangle Triangle::operator*(const double n)
+{
+    Triangle res;
+    this->first.SetPoint(first.getX() * n, first.getY() * n);
+    this->third.SetPoint(third.getX() * n, third.getY() * n);
+    SetTriangle(first, second, third, false);
+    res = *this;
+    return res;
+}
+
 void Triangle::draw()
 {
-    EngineGlut e;
     if (fill)
-        e.drawSurface(first.getX(), first.getY(), second.getX(), second.getY(), third.getX(), third.getY());
+        engine.drawSurface(first.getX(), first.getY(), second.getX(), second.getY(), third.getX(), third.getY());
     else
     {
         Line lineAB(first, second);

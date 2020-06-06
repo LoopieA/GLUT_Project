@@ -1,8 +1,9 @@
 #ifndef Rectangle_H
 #define Rectangle_H
 #include "Point.h"
+#include "Shape.h"
 
-class My_Rectangle
+class My_Rectangle: public Shape
 {
 private:
 	Point first, second, third, fourth;
@@ -12,6 +13,7 @@ public:
 	My_Rectangle(Point first, int width, int height, bool fill);
 	void SetRectangle(Point first, int width, int height, bool fill);
 	//Point* getLine() { Point line[2]; line[0] = first; line[1] = second; return line; };
+	My_Rectangle operator*(const double n);
 	void draw();
 };
 

@@ -15,12 +15,11 @@ Point::Point(double x, double y)
 // Point member function
 void Point::SetPoint(double x_coord, double y_coord)
 {
-    x = x_coord;
-    y = y_coord;
+    this->x = x_coord;
+    this->y = y_coord;
 }
 
 void Point::draw()
 {
-    EngineGlut e;
-    e.drawPoint(this->x, this->y);
+    engine.drawPoint(this->x, this->y);
 }

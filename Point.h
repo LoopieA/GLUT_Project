@@ -1,7 +1,8 @@
 #ifndef POINT_H
 #define POINT_H
+#include "Shape.h"
 
-class Point 
+class Point: public Shape
 {
 private:
 	double x, y;

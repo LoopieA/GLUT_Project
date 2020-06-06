@@ -23,13 +23,24 @@ void My_Rectangle::SetRectangle(Point x_Point, int width_rec, int height_rec, bo
     fill = fill_rec;
 }
 
+
+My_Rectangle My_Rectangle::operator*(const double n)
+{
+    My_Rectangle res;
+    this->first.SetPoint(first.getX() * n, first.getY() * n);
+    this->second.SetPoint(second.getX() * n, second.getY() * n);
+    this->third.SetPoint(third.getX() * n, third.getY() * n);
+    this->fourth.SetPoint(fourth.getX() * n, fourth.getY() * n);
+    res = *this;
+    return res;
+}
+
 void My_Rectangle::draw()
 {
-    EngineGlut e;
     if (fill)
     {
-        e.drawSurface(first.getX(), first.getY(), second.getX(), second.getY(), third.getX(), third.getY());
-        e.drawSurface(second.getX(), second.getY(), fourth.getX(), fourth.getY(), third.getX(), third.getY());
+        engine.drawSurface(first.getX(), first.getY(), second.getX(), second.getY(), third.getX(), third.getY());
+        engine.drawSurface(second.getX(), second.getY(), fourth.getX(), fourth.getY(), third.getX(), third.getY());
     }    
     else
     {

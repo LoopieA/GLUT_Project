@@ -1,7 +1,7 @@
 #include "Line.h"
 #include "EngineGlut.h";
 #include "Point.h"
-
+#include <iostream>
 Line::Line()
 {
     SetLine(*(new Point(0, 0)), *(new Point(0, 0)));
@@ -19,8 +19,16 @@ void Line::SetLine(Point x_Point, Point y_Point)
     second = y_Point;
 }
 
+Line Line::operator*(const double n)
+{
+    Line res;
+    this->second.SetPoint(second.getX() * n, second.getY() * n);
+    SetLine(first, second);
+    res = *this;
+    return res;
+}
+
 void Line::draw()
 {
-    EngineGlut e;
-    e.drawLine(first.getX(), first.getY(), second.getX(), second.getY());
+    engine.drawLine(first.getX(), first.getY(), second.getX(), second.getY());
 }
