@@ -8,6 +8,7 @@
 #include "Triangle.h"
 #include "Rectangle.h"
 #include "Airplane.h"
+#include "Robot.h"
 
 #define PI 3.1415
 void drawSinus()
@@ -91,6 +92,7 @@ void PointCoutOverloadTest()
     Point pointA(-100, 0);
     std::cout << pointA;
 }
+
 void RecCoutOverloadTest()
 {
     Point pointA(-100, 0);
@@ -110,6 +112,7 @@ int main(int argc, char ** argv)
     //DrawLineAnimation();
     //ZoomTriangleAnimationTest();
     //ZoomRectangleAnimationTest();
-    RecCoutOverloadTest();
+    //RecCoutOverloadTest();
+    Robot robot;
     std::cin.ignore();
 }

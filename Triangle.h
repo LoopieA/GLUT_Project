@@ -16,6 +16,7 @@ public:
 	Triangle operator*(const double n);
 	void draw();
 	friend std::ostream& operator<<(std::ostream& os, const Triangle& p);
+	void print();
 };
 
 #endif // Triangle

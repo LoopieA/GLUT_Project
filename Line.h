@@ -15,6 +15,7 @@ public:
 	Line operator*(const double n);
 	void draw();
 	friend std::ostream& operator<<(std::ostream& os, const Line& p);
+	void print();
 };
 
 #endif // Line

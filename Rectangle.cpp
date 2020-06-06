@@ -63,3 +63,8 @@ std::ostream& operator << (std::ostream& out, const My_Rectangle& c)
     out << "Fourth->" << c.fourth << "\n";
     return out;
 }
+
+void My_Rectangle::print()
+{
+    std::cout << this;
+}

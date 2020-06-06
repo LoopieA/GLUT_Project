@@ -31,3 +31,8 @@ std::ostream& operator << (std::ostream& out, const Point& c)
     out << "The Y coordinate of the point: " << c.y << "\n";
     return out;
 }
+
+void Point::print()
+{
+    std::cout << this;
+}

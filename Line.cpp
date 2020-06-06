@@ -39,3 +39,8 @@ std::ostream& operator << (std::ostream& out, const Line& c)
     out << "Second->" << c.second << "\n";
     return out;
 }
+
+void Line::print()
+{
+    std::cout << this;
+}

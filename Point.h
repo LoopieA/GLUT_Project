@@ -15,6 +15,7 @@ public:
 	double getY(){ return  y; };
 	void draw();
 	friend std::ostream& operator<<(std::ostream& os, const Point& p);
+	void print();
 };
 
 #endif // Point	

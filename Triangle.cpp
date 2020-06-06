@@ -55,3 +55,8 @@ std::ostream& operator << (std::ostream& out, const Triangle& c)
     out << "Third->" << c.third << "\n";
     return out;
 }
+
+void Triangle::print()
+{
+    std::cout << this;
+}

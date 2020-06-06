@@ -16,6 +16,7 @@ public:
 	My_Rectangle operator*(const double n);
 	void draw();
 	friend std::ostream& operator<<(std::ostream& os, const My_Rectangle& p);
+	void print();
 };
 
 #endif // Rectangle
